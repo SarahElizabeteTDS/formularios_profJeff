@@ -8,6 +8,31 @@
 
     <link rel="stylesheet" href="default.css">
 
+    <style>
+
+        #cor-favorita{
+            width: 200px;
+            padding: 5px 20px;
+            border-radius: 5px;
+        }
+
+        #cor-favorita option{
+            width: 200px;
+            padding: 5px 20px;
+        }
+
+        #cor-favorita option[value="opcao_vermelho"]{
+           background-color: red;
+        }
+        #cor-favorita option[value="opcao_azul"]{
+           background-color: blue;
+        }
+        #cor-favorita option[value="opcao_verde"]{
+           background-color: green;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -70,7 +95,7 @@
         </div>
 
         <div>
-            <select name="cor_favorita" id="" required>
+            <select name="cor_favorita" id="cor-favorita" required>
                 <option value="">Selecione uma opcao</option>
 
                 <option value="opcao_verde">Verde</option>
