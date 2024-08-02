@@ -40,7 +40,7 @@
         <div>
 
             <label for="campo_turno_manha">
-                <input type="checkbox" name="campo_turno" value="manhã" id="campo_turno_manha" checked>
+                <input type="radio" name="campo_turno" value="manhã" id="campo_turno_manha" checked>
                 manhã
             </label>
 
@@ -57,8 +57,33 @@
         </div>
 
         <div>
+            <label for="prato">
+                Prato Principal <input type="checkbox" value="prato_principal" id="prato" name="opcoes">
+            </label>
+            <label for="">
+                Salada <input type="checkbox" value="salada" name="opcoes">
+            </label>
+            <label for="">
+                Sobremesa <input type="checkbox" value="sobremesa" name="opcoes">
+            </label>
+            
+        </div>
+
+        <div>
+            <select name="cor_favorita" id="" required>
+                <option value="">Selecione uma opcao</option>
+
+                <option value="opcao_verde">Verde</option>
+                <option value="opcao_vermelho">Vermelho</option>
+                <option value="opcao_azul">Azul</option>
+            </select>
+        </div>
+
+
+        <div>
             <input type="submit">
         </div>
+
     </form>
 
 </body>
