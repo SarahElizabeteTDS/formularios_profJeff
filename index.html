@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+
     <link rel="stylesheet" href="default.css">
 
     <style>
@@ -138,12 +145,20 @@
             </select>
         </div>
 
+        <div>
+            <textarea name="" id=""></textarea>
+        </div>
+
 
         <div>
             <input type="submit">
         </div>
 
     </form>
+
+    <script>
+        new FroalaEditor('textarea');
+    </script>
 
 </body>
 
